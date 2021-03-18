@@ -10,4 +10,14 @@ az alapok elmélyüljenek.
 
 ### Mi a verziókövetés és mire jó?
 
-WIP
+A verziókövető rendszerek, alkalmazások alapfeladata, hogy bizonyos munkák
+állapotait elmenthessük. Ezáltal bármikor visszaállhatunk egy előző, ismert
+állapotra, valamint jól követhetővé válik a munkánk fejlődése. A mi esetünkben
+ez a munka jellemzően valamilyen (számítástechnikai) _kódbázis_, és ahhoz
+kapcsolódó dolgok (dokumentáció, szkriptek, stb.).
+
+Érdemes minden apró, de jellemzően összefüggő változást a verziókövetővel
+elmenteni. Fontos megtalálni egy-egy projekt szempontjából az _egészséges_
+mértékét annak, hogy már mentsünk, vagy még ne. Például, ennek a szövegnek a
+megírásakor úgy jártunk el, hogy nem minden mondatot mentünk el, de amikor
+ez a rövid fejezet elkészül, elmentjük.
