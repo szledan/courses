@@ -1,11 +1,26 @@
 import sys
-
-print ('Number of arguments:', len(sys.argv), 'arguments.')
-print ('Argument List:', str(sys.argv))
-
-file=open(sys.argv[1],'r')
+file=open(sys.argv[1], 'r')
 Lines=file.readlines()
-count=0
+file.close()
 for line in Lines:
-    count+=1
-    print("Line{}: {}".format(count,line.strip()))
+    if line.strip()=="":
+        continue
+    num=float(line.strip())
+    isprime="1"
+    if num<1:
+        isprime="-"
+    elif num/int(num)!=1:
+        isprime="-"
+    elif num==1:
+        isprime="0"
+    elif num==2:
+        isprime="1"
+    elif num %2==0:
+        isprime="0"
+    else:
+        guard=num/2
+        for n in range(3, int(guard), 2):
+            if num %n==0:
+                isprime="0"
+                break
+    print("{} {}".format(num, isprime))
