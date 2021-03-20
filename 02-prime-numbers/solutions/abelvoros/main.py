@@ -8,15 +8,11 @@ for line in Lines:
     continue
   num = float(line.strip())
   isprime = "1"
-  if num < 1:
+  if num < 1 or num / int(num) != 1:
     isprime = "-"
-  elif num / int(num) != 1:
-    isprime = "-"
-  elif num == 1:
-    isprime = "0"
   elif num == 2:
     isprime = "1"
-  elif num %2 == 0:
+  elif num == 1 or num %2 == 0:
     isprime = "0"
   else:
     guard = math.sqrt(num) + 1
