@@ -12,12 +12,12 @@ for line in Lines:
     isprime = "-"
   elif num == 2:
     isprime = "1"
-  elif num == 1 or num %2 == 0:
+  elif num == 1 or num % 2 == 0:
     isprime = "0"
   else:
     guard = math.sqrt(num) + 1
     for n in range(3, int(guard), 2):
-      if num %n == 0:
+      if num % n == 0:
         isprime = "0"
         break
   print("{} {}".format(num, isprime))
